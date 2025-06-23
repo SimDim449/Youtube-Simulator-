@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Video Creator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="quote-section">
+      <p id="stoic-quote">Loading inspiration...</p>
+    </div>
+    
+    <div class="videos-section">
+      <h1>My Videos</h1>
+      <button id="record-btn" class="record-button">Record a Video</button>
+    </div>
+  </div>
+
+  <!-- Number Game Page -->
+  <div id="game-page" class="page hidden">
+    <div class="game-container">
+      <h2>Click the Numbers!</h2>
+      <div id="numbers-container" class="numbers-grid"></div>
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="progress-text">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Video Page -->
+  <div id="edit-video-page" class="page hidden">
+    <div class="edit-container">
+      <h2>Edit Video</h2>
+      <div id="video-canvas" class="video-canvas">
+        <div class="click-indicator hidden" id="click-indicator">Click!</div>
+        <div id="effects-display"></div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="video-progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="video-progress-text">0%</span>
+      </div>
+      <button id="start-editing" class="edit-button">Start Editing</button>
+      <button id="edit-image-btn" class="edit-button hidden">Edit Image</button>
+    </div>
+  </div>
+
+  <!-- Edit Image Page -->
+  <div id="edit-image-page" class="page hidden">
+    <div class="edit-container">
+      <h2>Edit Image</h2>
+      <div id="image-canvas" class="image-canvas">
+        <div class="thumbnail-preview">Thumbnail Preview</div>
+        <div id="image-effects"></div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div id="image-progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="image-progress-text">0%</span>
+      </div>
+      <button id="start-image-editing" class="edit-button">Start Image Editing</button>
+      <button id="save-upload-btn" class="save-button hidden">Save Image and Upload Video</button>
+    </div>
+  </div>
+
+  <!-- Video Title Page -->
+  <div id="video-title-page" class="page hidden">
+    <div class="edit-container">
+      <h2>Title of the Video</h2>
+      <input type="text" id="video-title-input" class="title-input" placeholder="Enter your video title..." maxlength="100">
+      <div class="upload-thumbnail-preview">
+        <div class="preview-thumbnail">📹 Video Thumbnail</div>
+      </div>
+      <button id="final-upload-btn" class="upload-button">Upload Video</button>
+    </div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
